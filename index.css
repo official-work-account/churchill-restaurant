@@ -3,20 +3,14 @@
 /* font-family: 'Big Shoulders Text', cursive; */
 
 .nav-flex-row {
-  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: row;
   justify-content: center;
   position: absolute;
   z-index: 100;
   left: 0;
-  /* width: 100%; */
-  width: fit-content;
+  width: 100%;
   padding: 0;
-  top: 15px;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 30px;
 }
 
 .nav-flex-row li {
@@ -55,8 +49,16 @@
 
 .bg-video {
   width: 100%;
-  /* height: auto; */
+  height: 100%;
+  object-fit: inherit;
   /* z-index: -100; */
+}
+
+.logo {
+  position: absolute;
+  z-index: 1;
+  /* top: 15px; */
+  left: 15px;
 }
 
 /* .video-container {
@@ -96,16 +98,35 @@
 
 .link-to-book {
   color: #ffffff;
+  background-color: #000000;
   display: block;
   border: 2px solid #ffffff;
   padding: 5px 10px;
+  text-decoration: none;
 }
 
 a.link-to-book:hover {
-  background-color: #ffffff;
-  color: #95999e;
+  border: 2px solid white;
+  color: white;
   text-decoration: none;
+  background-color: transparent;
 }
+
+/* .my-custom-navbar {
+  box-shadow:
+    rgba(0, 0, 0, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  width: 100%;
+  position: absolute !important;
+} */
+
+/* .my-custom-navbar .navbar-nav .nav-link {
+  color: white !important;
+} */
+
+/* .navbar-brand {
+  color: white !important;
+} */
 
 .about-section p,
 .about-section h3 {
@@ -147,10 +168,15 @@ a.link-to-book:hover {
 .btn.btn-primary:hover {
   background-color: #747474;
 }
-.opening-time,
-.contact-adress {
+.opening-time {
   flex: 1;
   margin: 30px 20px;
+  font-size: 1.2em;
+}
+
+.contact-adress {
+  flex: 1;
+  margin: 0 20px;
   font-size: 1.2em;
 }
 
@@ -173,13 +199,15 @@ a.link-to-book:hover {
     font-size: 20px;
   }
 
-  .carousel-inner {
-    height: auto;
-  }
-
   .row-flex {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .contact-adress {
+    margin: 30px 20px;
   }
 }
 
@@ -212,7 +240,7 @@ a.link-to-book:hover {
 
   .row-flex h3 {
     font-size: 25px;
-    text-align: center;
+    /* text-align: center; */
   }
 
   .form-group p {
@@ -222,6 +250,6 @@ a.link-to-book:hover {
   .opening-time p span,
   .contact-adress p span {
     font-size: 15px;
-    text-align: center;
+    /* text-align: center; */
   }
 }

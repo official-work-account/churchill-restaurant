@@ -158,22 +158,51 @@
           <form class="media-centered">
             <div class="form-group mb-2">
               <p>Please leave your number we will call to make a reservation</p>
+              <label for="name">Your Name</label>
               <input
                 type="name"
                 class="form-control"
-                id="exampleInputName1"
+                id="name"
                 aria-describedby="nameHelp"
                 placeholder="Enter your name"
               />
             </div>
+
             <div class="form-group mb-2">
+              <label for="reservationDate">Select date</label>
+              <input
+                type="date"
+                class="form-control"
+                id="reservationDate"
+                placeholder="Enter your date"
+              />
+            </div>
+
+            <div class="form-group mb-2">
+              <label for="reservationTime">Select time</label>
+              <input
+                type="time"
+                class="form-control"
+                id="reservationTime"
+                placeholder="Select time"
+              />
+            </div>
+
+            <div class="form-group mb-2">
+              <label for="numberOfPeople">Number of People</label>
+              <input type="number" class="form-control" id="numberOfPeople" />
+            </div>
+
+            <div class="form-group mb-2">
+              <label for="phoneNumber">Phone Number (optional)</label>
               <input
                 type="tel"
                 class="form-control"
-                id="exampleInputphoneNumber1"
-                placeholder="Enter your phone number"
+                id="phoneNumber"
+                placeholder="Your phone number"
               />
             </div>
+
             <button type="submit" class="btn btn-primary mb-2">Submit</button>
           </form>
         </div>

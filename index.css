@@ -98,18 +98,20 @@
 
 .link-to-book {
   color: #ffffff;
-  background-color: #000000;
-  display: block;
+  background: transparent;
+  /* display: block; */
   border: 2px solid #ffffff;
+  border-radius: 8px;
   padding: 5px 10px;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 a.link-to-book:hover {
   border: 2px solid white;
   color: white;
   text-decoration: none;
-  background-color: transparent;
+  background-color: gray;
 }
 
 /* .my-custom-navbar {
